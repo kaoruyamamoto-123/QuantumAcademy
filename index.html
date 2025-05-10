@@ -1,0 +1,220 @@
+
+    <html lang="ru">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="icon" href="images/favicon.png" type="image/x-icon">
+      <title>Квантовая академия</title>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+      <style>
+        body {
+          font-family: 'Montserrat', sans-serif;
+          margin: 0;
+          background: #f9fafe;
+          color: #20223a;
+          overflow-x: hidden;
+        }
+    
+        header {
+          background: linear-gradient(135deg, #00c9a7, #5b5bd6);
+          color: white;
+          padding: 40px 20px;
+          text-align: center;
+          animation: fadeInDown 1s ease-out;
+        }
+    
+        nav {
+          background: #2a2d4d;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          animation: fadeIn 1.5s ease-out;
+        }
+    
+        nav a {
+          color: white;
+          padding: 14px 16px;
+          text-decoration: none;
+          transition: background 0.3s, transform 0.3s;
+        }
+    
+        nav a:hover {
+          background-color: #414472;
+          transform: scale(1.05);
+        }
+    
+        .section {
+          padding: 40px 20px;
+          max-width: 1100px;
+          margin: 20px auto;
+          background: white;
+          border-radius: 12px;
+          box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+          animation: fadeInUp 1s ease-out;
+        }
+    
+        .section img {
+          max-width: 100%;
+          border-radius: 8px;
+          margin-top: 20px;
+          transition: transform 0.3s ease;
+        }
+    
+        .section img:hover {
+          transform: scale(1.02);
+        }
+    
+        h2 {
+          color: #2a2d4d;
+          animation: fadeIn 1s ease-out;
+        }
+    
+        .card {
+          background: #ffffff;
+          padding: 20px;
+          margin: 20px 0;
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+          border-radius: 8px;
+          text-align: center;
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+          animation: fadeInUp 1s ease-out;
+        }
+    
+        .card:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        }
+    
+        .card img {
+          max-width: 150px;
+          margin-bottom: 15px;
+        }
+    
+        .card h3 {
+          color: #2a2d4d;
+        }
+    
+        .card p {
+          color: #555;
+          font-size: 16px;
+        }
+    
+        .card a {
+          display: inline-block;
+          margin-top: 10px;
+          padding: 10px 20px;
+          background-color: #00c9a7;
+          color: white;
+          text-decoration: none;
+          border-radius: 8px;
+          transition: background 0.3s ease;
+        }
+    
+        .card a:hover {
+          background-color: #5b5bd6;
+        }
+    
+        footer {
+          background: #2a2d4d;
+          color: white;
+          text-align: center;
+          padding: 20px;
+          margin-top: 40px;
+          animation: fadeIn 2s ease-out;
+        }
+    
+        /* Анимации */
+        @keyframes fadeIn {
+          from { opacity: 0; }
+          to { opacity: 1; }
+        }
+    
+        @keyframes fadeInDown {
+          from {
+            opacity: 0;
+            transform: translateY(-30px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+    
+        @keyframes fadeInUp {
+          from {
+            opacity: 0;
+            transform: translateY(30px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+    
+        @media (max-width: 768px) {
+          nav {
+            flex-direction: column;
+            align-items: center;
+          }
+          .section {
+            margin: 10px;
+            padding: 20px;
+          }
+        }
+      </style>
+    </head>
+    <body>
+    
+    <header>
+      <h1>Квантовая академия</h1>
+      <p>Образовательная платформа по квантовым коммуникациям</p>
+    </header>
+    
+    <nav>
+      <a href="#about">Квантовые коммуникации</a>
+      <a href="map.html">Карта профессий</a>
+      <a href="catalog.html">Каталог организаций</a>
+      <a href="education.html">Образование</a>
+      <a href="roadmap.html">Дорожная карта</a>
+      <a href="learning.html">Теория и практика</a>
+      <a href="simulator.html">Эмулятор</a>
+    </nav>
+    
+    <div class="section" id="about">
+      <h2>Что такое квантовые коммуникации?</h2>
+      <p>Технология передачи данных, основанная на принципах квантовой механики. Обеспечивает абсолютную защиту информации за счёт невозможности незаметного перехвата.</p>
+      <img src="images/qc.jpg" alt="Квантовые коммуникации">
+    </div>
+    
+    <div class="section">
+      <h2>Наши курсы</h2>
+    
+      <div class="card">
+        <img src="images/qpc.webp" alt="Квантовая физика">
+        <h3>Квантовая физика</h3>
+        <p>Основы квантовой механики, ее влияние на технологии и теории. Подробное изучение принципов работы квантовых систем.</p>
+        <a href="course_details.html">Подробнее</a>
+      </div>
+    
+      <div class="card">
+        <img src="images/qcc.webp" alt="Квантовые коммуникации">
+        <h3>Квантовые коммуникации</h3>
+        <p>Изучение квантовых методов передачи данных и их применения для создания защищённых систем связи.</p>
+        <a href="course_details.html">Подробнее</a>
+      </div>
+    
+      <div class="card">
+        <img src="images/qsc.jpg" alt="Квантовая безопасность">
+        <h3>Информационная безопасность</h3>
+        <p>Как использовать квантовые алгоритмы для обеспечения безопасности данных и предотвращения утечек информации.</p>
+        <a href="course_details.html">Подробнее</a>
+      </div>
+    </div>
+    
+    <footer>
+      &copy; 2025 Квантовая академия. Все права защищены.
+    </footer>
+    
+    </body>
+    </html>
+    

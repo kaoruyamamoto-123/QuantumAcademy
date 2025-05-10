@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="images/favicon.png" type="image/x-icon">
+  <title>Теория и практика</title>
+  <link href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/css/phosphor.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4faff;
+      color: #2a2d4d;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: linear-gradient(to right, #00bcd4, #2196f3, #3f51b5, #673ab7);
+      color: white;
+      padding: 40px 20px;
+      border-radius: 0 0 10px 10px;
+      position: relative;
+    }
+    .back-button {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      text-decoration: none;
+      color: white;
+      font-size: 24px;
+      background: rgba(255, 255, 255, 0.2);
+      padding: 5px 10px;
+      border-radius: 6px;
+      transition: background 0.3s;
+    }
+    .back-button:hover {
+      background: rgba(255, 255, 255, 0.3);
+    }
+    header h1 {
+      margin: 0;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      color: #3f51b5;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 10px;
+    }
+    .card {
+      background: #ffffff;
+      border-left: 5px solid #00bcd4;
+      border-radius: 8px;
+      padding: 20px 20px 20px 60px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      position: relative;
+    }
+    .card i {
+      font-size: 32px;
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      color: #00bcd4;
+    }
+    .card h3 {
+      margin-top: 0;
+      color: #5b5bd6;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a class="back-button" href="index.html" title="На главную">←</a>
+    <h1>Теория и практика квантовых коммуникаций</h1>
+  </header>
+
+  <section>
+    <h2>Теория</h2>
+    <div class="card">
+      <i class="ph ph-atom"></i>
+      <h3>Квантовая механика в коммуникациях</h3>
+      <p>Ключевые принципы: суперпозиция, запутанность, принцип неопределённости. Эти явления лежат в основе передачи данных с использованием квантов света.</p>
+    </div>
+    <div class="card">
+      <i class="ph ph-lock-key"></i>
+      <h3>Квантовое распределение ключей (QKD)</h3>
+      <p>Метод обмена криптографическими ключами, гарантирующий абсолютную защиту от перехвата благодаря квантовым законам.</p>
+    </div>
+    <div class="card">
+      <i class="ph ph-code-simple"></i>
+      <h3>Квантовые протоколы</h3>
+      <p>BB84, E91 и другие — обеспечивают безопасный обмен информацией. Изучение их помогает понять практическую реализацию безопасности.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Практика</h2>
+    <div class="card">
+      <i class="ph ph-flask"></i>
+      <h3>Лабораторные стенды и симуляторы</h3>
+      <p>Студенты и специалисты используют стенды на базе фотонных решений и программные симуляторы (например, Qiskit, SimulaQron).</p>
+    </div>
+    <div class="card">
+      <i class="ph ph-cpu"></i>
+      <h3>Тестирование оборудования</h3>
+      <p>Полевые испытания квантовых модемов, оптоволоконных линий и защищённых каналов в рамках пилотных проектов (Сколково, МГУ).</p>
+    </div>
+    <div class="card">
+      <i class="ph ph-graduation-cap"></i>
+      <h3>Образовательные программы</h3>
+      <p>Программы ведущих вузов включают модули по квантовой криптографии, физике и информационной безопасности с практической частью.</p>
+    </div>
+  </section>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/favicon.png" type="image/x-icon">
+  <title>Образование</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #00bcd4, #2196f3, #3f51b5, #673ab7);
+      color: white;
+      margin: 0;
+      padding: 0;
+    }
+    header, section {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .back-button {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      text-decoration: none;
+      color: white;
+      font-size: 24px;
+      background: rgba(255,255,255,0.2);
+      padding: 5px 10px;
+      border-radius: 6px;
+      transition: background 0.3s;
+    }
+    .back-button:hover {
+      background: rgba(255,255,255,0.3);
+    }
+    h1, h2 {
+      border-bottom: 2px solid rgba(255,255,255,0.3);
+      padding-bottom: 10px;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      padding: 5px 0;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: rgba(255,255,255,0.1);
+      padding: 20px;
+      border-radius: 10px;
+      backdrop-filter: blur(10px);
+    }
+    .card img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a class="back-button" href="index.html" title="На главную">←</a>
+    <h1>Каталог организаций</h1>
+  </header>
+  <section>
+    <div class="grid">
+      <div class="card">
+        <img src="images/skolkovo.png" alt="Сколково">
+        <p>Сколково</p>
+      </div>
+      <div class="card">
+        <img src="images/rostec.jpg" alt="Ростех">
+        <p>Ростех</p>
+      </div>
+      <div class="card">
+        <img src="images/rosatom.png" alt="Росатом">
+        <p>Росатом</p>
+      </div>
+      <div class="card">
+        <img src="images/rkc.png" alt="Российская квантовая сеть">
+        <p>Российский квантовый центр</p>
+      </div>
+      <div class="card">
+        <img src="images/qrate.webp" alt="QRate">
+        <p>QRate</p>
+      </div>
+      <div class="card">
+        <img src="images/smartquant.jpg" alt="СМАРТ Квант">
+        <p>Смартс Кванттелеком</p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

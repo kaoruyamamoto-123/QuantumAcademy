@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="images/favicon.png" type="image/x-icon">
+  <title>Карта профессий</title>
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: #f0faff;
+      color: #2a2d4d;
+      margin: 0;
+      padding: 20px;
+    }
+    .back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    text-decoration: none;
+    color: #00a8cc;
+    font-size: 24px;
+    background: rgba(0, 168, 204, 0.1);
+    padding: 5px 10px;
+    border-radius: 6px;
+    transition: background 0.3s;
+    }
+    .back-button:hover {
+      background: rgba(0, 168, 204, 0.2);
+    }
+
+    h1 {
+      text-align: center;
+      color: #00a8cc;
+    }
+    .category {
+      margin-bottom: 30px;
+    }
+    .category h2 {
+      color: #5b5bd6;
+    }
+    .profession-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .profession {
+      padding: 10px 15px;
+      background: #e0f7fa;
+      border: 2px solid #00bcd4;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .profession:hover {
+      background: #00bcd4;
+      color: white;
+    }
+    .info {
+      margin-top: 20px;
+      padding: 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      background: #ffffff;
+    }
+  </style>
+</head>
+<body>
+  <a class="back-button" href="index.html" title="На главную">←</a>
+  <h1>Интерактивная карта профессий</h1>
+
+  <div class="category">
+    <h2>1. Разработка и исследование</h2>
+    <div class="profession-list">
+      <div class="profession" onclick="showInfo('Исследователь: проводит фундаментальные и прикладные исследования в области квантовых технологий.')">Исследователь</div>
+      <div class="profession" onclick="showInfo('Разработчик: проектирует и создаёт программное и аппаратное обеспечение квантовых сетей.')">Разработчик</div>
+      <div class="profession" onclick="showInfo('Инженер по безопасности: отвечает за защиту данных и устойчивость квантовой сети.')">Инженер по безопасности</div>
+      <div class="profession" onclick="showInfo('Инженер тестирования: проверяет работоспособность и надёжность оборудования и программ.')">Инженер тестирования</div>
+      <div class="profession" onclick="showInfo('Конструктор: занимается разработкой физического оборудования для квантовой связи.')">Конструктор</div>
+    </div>
+  </div>
+
+  <div class="category">
+    <h2>2. Монтаж и техническая эксплуатация</h2>
+    <div class="profession-list">
+      <div class="profession" onclick="showInfo('Кабельщик-спайщик: монтирует и обслуживает оптоволоконные линии связи.')">Кабельщик-спайщик</div>
+      <div class="profession" onclick="showInfo('Монтажник линии связи: отвечает за установку коммуникационного оборудования.')">Монтажник линии связи</div>
+      <div class="profession" onclick="showInfo('Инженер по эксплуатации: контролирует работоспособность сети и устраняет неисправности.')">Инженер по эксплуатации</div>
+      <div class="profession" onclick="showInfo('Инженер электросвязи: работает с электромагнитными системами связи и их поддержкой.')">Инженер электросвязи</div>
+    </div>
+  </div>
+
+  <div class="category">
+    <h2>3. Администрирование и коммерция</h2>
+    <div class="profession-list">
+      <div class="profession" onclick="showInfo('Менеджер производства: организует процессы выпуска и сборки оборудования.')">Менеджер производства</div>
+      <div class="profession" onclick="showInfo('Менеджер проектов: координирует реализацию проектов в области квантовых технологий.')">Менеджер проектов</div>
+      <div class="profession" onclick="showInfo('Закупщик: занимается поиском и приобретением комплектующих и оборудования.')">Закупщик</div>
+      <div class="profession" onclick="showInfo('Специалист по сертификации: обеспечивает соответствие продукции стандартам.')">Специалист по сертификации</div>
+      <div class="profession" onclick="showInfo('Специалист по развитию бизнеса: анализирует рынок и развивает партнёрства.')">Специалист по развитию бизнеса</div>
+    </div>
+  </div>
+
+  <div class="info" id="infoBox">
+    <strong>Наведи курсор на профессию, чтобы узнать больше.</strong>
+  </div>
+
+  <script>
+    function showInfo(text) {
+      document.getElementById('infoBox').innerHTML = text;
+    }
+  </script>
+</body>
+</html>
